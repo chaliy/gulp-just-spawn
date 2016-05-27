@@ -12,24 +12,24 @@ Main driver is the fact that sometimes build scripts require just running commnd
 
 ## Usage
 
-First, install `gulp-cmd` as a development dependency:
+First, install `gulp-just-spawn` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-cmd
+npm install --save-dev gulp-just-spawn
 ```
 Then add use it in your gulpfile, like so (note these are only examples, please check the documentation for your functions for the correct way to use them):
 
 ```js
 var gulp = require('gulp');
-var cmd = require('gulp-cmd');
+var spawn = require('gulp-just-spawn');
 
 // Run single command
 
-gulp.task('deploy', () => cmd('eb', ['deploy', 'production']));
+gulp.task('deploy', () => spawn('eb', ['deploy', 'production']));
 
 // Run multiple command sequentually
 
-gulp.task('build:client', () => cmd([
+gulp.task('build:client', () => spawn([
   {cmd: 'npm', args: ['install'], options: {cwd: `${__dirname}/client`}},
   {cmd: 'npm', args: ['run', 'build'], options: {cwd: `${__dirname}/client`}}  
 ]));

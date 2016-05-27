@@ -2,14 +2,14 @@
 
 let spawn = require('child_process').spawn;
 
-module.exports = (command, args, options) => {
+let spawnee = (command, args, options) => {
   if (Array.isArray(command)){    
-    let next = () => {
+    let next = result => {
       let c = command.shift();
       if (c){
-        return cmd(c.cmd, c.args, c.options).then(next);
+        return spawnee(c.cmd, c.args, c.options).then(next);
       }
-      return Promise.resolve();
+      return Promise.resolve(result);
     };
     
     return next();
@@ -20,9 +20,10 @@ module.exports = (command, args, options) => {
     let proc = spawn(command, args, procOptions);    
 
     proc.on('exit', code => {      
-      console.log(code);
-      if (code === 0) resolve(code)
-      else reject(code)              
+      if (code === 0) resolve(code);
+      else reject(code); 
     });
   })
 };
+
+module.exports = spawnee;
