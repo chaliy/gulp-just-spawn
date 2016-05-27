@@ -1,0 +1,29 @@
+{
+  "name": "gulp-cmd",
+  "version": "1.0.0",
+  "description": "Shell runner for gulp - Because there is not enough spawn/exec wrappers on the Internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"    
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaliy/gulp-cmd.git"
+  },
+  "keywords": [
+    "gulpfriendly",      
+    "gulp",
+    "spawn",
+    "exec"
+  ],
+  "author": "Mike Chaliy <mike@chaliy.name> (https://github.com/chaliy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaliy/gulp-cmd/issues"
+  },
+  "homepage": "https://github.com/chaliy/gulp-cmd#readme",
+  "devDependencies": {
+  },
+  "dependencies": {    
+  }
+}
