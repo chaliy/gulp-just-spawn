@@ -1,5 +1,5 @@
 {
-  "name": "gulp-cmd",
+  "name": "gulp-just-spawn",
   "version": "1.0.0",
   "description": "Shell runner for gulp - Because there is not enough spawn/exec wrappers on the Internet",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaliy/gulp-cmd.git"
+    "url": "git+https://github.com/chaliy/gulp-just-spawn.git"
   },
   "keywords": [
     "gulpfriendly",      
@@ -19,9 +19,9 @@
   "author": "Mike Chaliy <mike@chaliy.name> (https://github.com/chaliy)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chaliy/gulp-cmd/issues"
+    "url": "https://github.com/chaliy/gulp-just-spawn/issues"
   },
-  "homepage": "https://github.com/chaliy/gulp-cmd#readme",
+  "homepage": "https://github.com/chaliy/gulp-just-spawn#readme",
   "devDependencies": {
   },
   "dependencies": {    

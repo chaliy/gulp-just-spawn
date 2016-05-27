@@ -1,4 +1,4 @@
-# gulp-cmd
+# gulp-just-spawn
 
 ## Because there is not enough spawn/exec wrappers on the Internet
 
@@ -39,8 +39,5 @@ gulp.task('build:client', () => cmd([
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
 
-[npm-url]: https://npmjs.org/package/gulp-cmd
-[npm-image]: https://badge.fury.io/js/gulp-cmd.png
-
-[gratipay-url]: https://www.gratipay.com/OverZealous/
-[gratipay-image]: https://img.shields.io/gratipay/OverZealous.svg
+[npm-url]: https://npmjs.org/package/gulp-just-spawn
+[npm-image]: https://badge.fury.io/js/gulp-just-spawn.png

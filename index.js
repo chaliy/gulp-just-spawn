@@ -2,7 +2,7 @@
 
 let spawn = require('child_process').spawn;
 
-let cmd = (command, args, options) => {
+module.exports = (command, args, options) => {
   if (Array.isArray(command)){    
     let next = () => {
       let c = command.shift();
@@ -25,7 +25,4 @@ let cmd = (command, args, options) => {
       else reject(code)              
     });
   })
-}  
-
-
-module.exports = cmd;
+};
